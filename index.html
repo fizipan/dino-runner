@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinosaurus Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Game Dinosaurus</h1>
+        <button type="button" id="buttonMode">Click to dark mode</button>
+        <button type="button" onclick="play()">Mulai</button>
+        <button type="button" onclick="stop()">Stop</button>
+        <br><br>
+        <div id="game" onclick="jump()">
+            <div id="character"></div>
+            <div id="block"></div>
+        </div>
+        <div id="chooseCharacter">
+            <h2>Choose Character</h2>
+            <span id="red" class="block red" onclick="redCharacter()"></span>
+            <span id="blue" class="block blue" onclick="blueCharacter()"></span>
+            <span id="pink" class="block orange" onclick="orangeCharacter()"></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
